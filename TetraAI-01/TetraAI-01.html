@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tetra AI</title>
+    <meta name="ad.size" content="width=300,height=250">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+      html {
+        width: 300px;
+      }
+      body {
+        margin: 0;
+      }
+      .background-1 {
+        background-color: #854e94;
+        padding: 10px;
+      }
+      .background-2 {
+        background-color: #68217a;
+        height: 230px;
+        border-radius: 8px;
+      }
+      .lottie {
+        width: 300px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+      }
+      .no-pointer {
+        pointer-events: none
+      }
+      .opacity {
+        opacity: 0;
+        transition-duration: .25s;
+      }
+      .opacity:hover {
+        opacity: 1;
+      }
+      .button-container {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 300px;
+        top: 190px;
+      }
+      .button {
+        margin: 4px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        transition-duration: 0.25s;
+      }
+      .button:hover {
+        transform: scale(1.05);
+      }
+      .button-1 {
+        color: #ffffff;
+        background-color: #fe5e20;
+        border: 2px solid #fe5e20;
+      }
+      .button-1:hover {
+        color: #fe5e20;
+        background-color: #ffffff;
+        border-color: #ffffff;
+      }
+      .button-2 {
+        color: #ffc7fa;
+        background-color: #68217a;
+        border: 2px solid #ffc7fa;
+      }
+      .button-2:hover {
+        color: #68217a;
+        background-color: #ffc7fa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background-1"><div class="background-2"></div></div>
+    <div class="button-container">
+      <a><button class="button button-1">Schedule a Demo</button></a>
+      <a><button class="button button-2">Learn More</button></a>
+    </div>
+    <div class="opacity">
+      <lottie-player class="lottie" src="Tetra_Loop_TrianglesOnly.js" background="transparent" speed="1" autoplay loop></lottie-player>
+      <div class="button-container">
+        <a target="_blank" href="https://www.tetra.ai"><button class="button button-1">Schedule a Demo</button></a>
+        <a target="_blank" href="https://www.tetra.ai"><button class="button button-2">Learn More</button></a>
+      </div>
+    </div>
+    <lottie-player class="lottie no-pointer" src="Tetra_Load-In_Text+Logo.js" background="transparent" speed="1" autoplay></lottie-player>
+  </body>
+</html>
