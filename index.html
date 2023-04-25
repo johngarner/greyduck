@@ -46,7 +46,7 @@
         let htmlString = '<header><div><div class="logos"><img src="greyduck.webp" alt="greyduck logo"><img src="x.webp" alt="x"><img src="webflow.webp" alt="webflow logo"></div><h4>HTML5 Previews<br>Prepared by John Garner</h4></div></header><ol>';
         
         for (let file of data) {
-          if (file.name != 'index.html' && 'greyduck.webp' && 'x.webp' && 'webflow.webp') {
+          if (file.name != 'index.html' && file.name != 'greyduck.webp' && file.name != 'x.webp' && file.name != 'webflow.webp') {
             htmlString += `<li><a href="${file.path}/">${file.name}</a></li>`;
           }
         }
