@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Webflow</title>
+    <meta name="ad.size" content="width=728,height=90">
+    <script src="lottie-player.js"></script>
+    <script>
+      var clickTag1 = "https://webflow.com/";
+    </script>
+    <style>
+      html {
+        width: 728px;
+      }
+      body {
+        margin: 0;
+        height: 90px;
+        position: relative;
+      }
+      .lottie {
+        position: absolute;
+      }
+      .opacity {
+        opacity: 0;
+      }
+      .opacity:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag1)">
+      <lottie-player class="lottie" src="General_A_728x90.js" count="1" loop autoplay></lottie-player>
+      <div class="opacity">
+        <lottie-player class="lottie" src="General_A_728x90_On.js" count="1" loop hover></lottie-player>
+      </div>
+    </a>
+  </body>
+</html>
